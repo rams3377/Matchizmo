@@ -14,7 +14,7 @@ class EmojiMemoryGame {
     
     static func createMemoryGame() -> MemoryGame<String> {
         MemoryGame<String>(numberOfParisOfCards: 4) { index in
-            EmojiMemoryGame.emojies[index]
+            emojies[index]
         }
     }
     
