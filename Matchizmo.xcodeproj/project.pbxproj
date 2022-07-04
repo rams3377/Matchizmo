@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		287F782B287377AB00954941 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F782A287377AB00954941 /* MemoryGame.swift */; };
+		287F782D28737A4B00954941 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F782C28737A4B00954941 /* EmojiMemoryGame.swift */; };
 		28B581712871CC2600FEEE25 /* MatchizmoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B581702871CC2600FEEE25 /* MatchizmoApp.swift */; };
 		28B581732871CC2600FEEE25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B581722871CC2600FEEE25 /* ContentView.swift */; };
 		28B581752871CC2600FEEE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B581742871CC2600FEEE25 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		287F782A287377AB00954941 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
+		287F782C28737A4B00954941 /* EmojiMemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGame.swift; sourceTree = "<group>"; };
 		28B5816D2871CC2600FEEE25 /* Matchizmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchizmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B581702871CC2600FEEE25 /* MatchizmoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchizmoApp.swift; sourceTree = "<group>"; };
 		28B581722871CC2600FEEE25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				28B581702871CC2600FEEE25 /* MatchizmoApp.swift */,
 				28B581722871CC2600FEEE25 /* ContentView.swift */,
+				287F782A287377AB00954941 /* MemoryGame.swift */,
+				287F782C28737A4B00954941 /* EmojiMemoryGame.swift */,
 				28B581742871CC2600FEEE25 /* Assets.xcassets */,
 				28B581762871CC2600FEEE25 /* Matchizmo.entitlements */,
 				28B581772871CC2600FEEE25 /* Preview Content */,
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				287F782B287377AB00954941 /* MemoryGame.swift in Sources */,
 				28B581732871CC2600FEEE25 /* ContentView.swift in Sources */,
 				28B581712871CC2600FEEE25 /* MatchizmoApp.swift in Sources */,
+				287F782D28737A4B00954941 /* EmojiMemoryGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
