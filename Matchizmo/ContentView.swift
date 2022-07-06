@@ -11,16 +11,14 @@ struct ContentView: View {
     var viewModel: EmojiMemoryGame
     
     var body: some View {
-        VStack {
-            ScrollView(.vertical) {
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 85))]) {
-                    ForEach(viewModel.cards) { card in
-                        CardView(card: card)
-                            .aspectRatio(2/3, contentMode: .fit)
-                    }
+        ScrollView(.vertical) {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 85))]) {
+                ForEach(viewModel.cards) { card in
+                    CardView(card: card)
+                        .aspectRatio(2/3, contentMode: .fit)
                 }
-                .foregroundColor(.red)
             }
+            .foregroundColor(.red)
             
             Spacer()
         }
