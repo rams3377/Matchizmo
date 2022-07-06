@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var viewModel: EmojiMemoryGame
+    @ObservedObject var viewModel: EmojiMemoryGame
     
     var body: some View {
         ScrollView(.vertical) {
@@ -16,10 +16,13 @@ struct ContentView: View {
                 ForEach(viewModel.cards) { card in
                     CardView(card: card)
                         .aspectRatio(2/3, contentMode: .fit)
+                        .onTapGesture {
+                            viewModel.choose(card)
+                        }
                 }
             }
             .foregroundColor(.red)
-            
+             
             Spacer()
         }
         .padding(.horizontal)
@@ -38,8 +41,6 @@ struct CardView: View {
             } else {
                 shape.fill()
             }
-        }
-        .onTapGesture {
         }
     }
 }
