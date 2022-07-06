@@ -9,12 +9,11 @@ import Foundation
 
 struct MemoryGame<CardContent> {
     private(set) var cards: [Card]
+    private var indexOfFaceUpCard: Int?
     
     mutating func choose(_ card: Card) {
-        if let chosenIndex = cards.firstIndex(where: { aCard in
-            aCard.id == card.id
-        }) {
-            cards[chosenIndex].isFaceUp.toggle()
+        if let index = cards.firstIndex(where: { $0.id == card.id} ) {
+            cards[index].isFaceUp.toggle()
         }
     }
     
