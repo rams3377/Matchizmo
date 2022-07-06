@@ -12,10 +12,11 @@ struct MemoryGame<CardContent> {
     
     func choose(_ card: Card) {}
     
-    struct Card {
-        var isfaceUp = false
+    struct Card: Identifiable {
+        var isFaceUp = false
         var isMatched = false
         var content: CardContent
+        var id: Int
     }
     
     init(numberOfParisOfCards: Int, createCardContent: (Int) -> CardContent) {
@@ -23,8 +24,8 @@ struct MemoryGame<CardContent> {
         
         for pairIndex in 0..<numberOfParisOfCards {
             let content = createCardContent(pairIndex)
-            cards.append(Card(content: content))
-            cards.append(Card(content: content))
+            cards.append(Card(content: content, id: pairIndex * 2))
+            cards.append(Card(content: content, id: pairIndex * 2 + 1))
         }
     }
 }
