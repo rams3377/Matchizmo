@@ -8,6 +8,8 @@
 import SwiftUI
     
 class EmojiMemoryGame: ObservableObject {
+    typealias Card = MemoryGame<String>.Card
+    
     private static let emojies = ["✈️", "🚊", "🛳", "🚗 ", "🏍", "🚤", "🛵", "🚁", "🚙", "🚢", "🛹", "🚜"]
     
     @Published private var model = EmojiMemoryGame.createMemoryGame()

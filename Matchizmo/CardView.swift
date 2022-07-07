@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CardView: View {
-    var card: MemoryGame<String>.Card
+    var card: EmojiMemoryGame.Card
+    
     var body: some View {
         ZStack {
             let shape = RoundedRectangle(cornerRadius: 20.0)
