@@ -11,7 +11,7 @@
 		287F782D28737A4B00954941 /* EmojiMemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F782C28737A4B00954941 /* EmojiMemoryGame.swift */; };
 		287F782F28766A8300954941 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287F782E28766A8300954941 /* CardView.swift */; };
 		28B581712871CC2600FEEE25 /* MatchizmoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B581702871CC2600FEEE25 /* MatchizmoApp.swift */; };
-		28B581732871CC2600FEEE25 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B581722871CC2600FEEE25 /* ContentView.swift */; };
+		28B581732871CC2600FEEE25 /* EmojiMemoryGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B581722871CC2600FEEE25 /* EmojiMemoryGameView.swift */; };
 		28B581752871CC2600FEEE25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B581742871CC2600FEEE25 /* Assets.xcassets */; };
 		28B581792871CC2600FEEE25 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28B581782871CC2600FEEE25 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -22,7 +22,7 @@
 		287F782E28766A8300954941 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		28B5816D2871CC2600FEEE25 /* Matchizmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchizmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28B581702871CC2600FEEE25 /* MatchizmoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchizmoApp.swift; sourceTree = "<group>"; };
-		28B581722871CC2600FEEE25 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28B581722871CC2600FEEE25 /* EmojiMemoryGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMemoryGameView.swift; sourceTree = "<group>"; };
 		28B581742871CC2600FEEE25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28B581762871CC2600FEEE25 /* Matchizmo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Matchizmo.entitlements; sourceTree = "<group>"; };
 		28B581782871CC2600FEEE25 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				28B581702871CC2600FEEE25 /* MatchizmoApp.swift */,
-				28B581722871CC2600FEEE25 /* ContentView.swift */,
+				28B581722871CC2600FEEE25 /* EmojiMemoryGameView.swift */,
 				287F782E28766A8300954941 /* CardView.swift */,
 				287F782A287377AB00954941 /* MemoryGame.swift */,
 				287F782C28737A4B00954941 /* EmojiMemoryGame.swift */,
@@ -149,7 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				287F782B287377AB00954941 /* MemoryGame.swift in Sources */,
-				28B581732871CC2600FEEE25 /* ContentView.swift in Sources */,
+				28B581732871CC2600FEEE25 /* EmojiMemoryGameView.swift in Sources */,
 				28B581712871CC2600FEEE25 /* MatchizmoApp.swift in Sources */,
 				287F782D28737A4B00954941 /* EmojiMemoryGame.swift in Sources */,
 				287F782F28766A8300954941 /* CardView.swift in Sources */,
