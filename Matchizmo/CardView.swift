@@ -18,7 +18,7 @@ struct CardView: View {
                     .opacity(CardConstants.timerOpacity)
                 Text(card.content).font(font(in: geometry.size))
             }
-            .modifier(Cardify(isFaceUp: card.isFaceUp))
+            .cardify(isFaceUp: card.isFaceUp)
         }
     }
     
