@@ -13,20 +13,12 @@ struct CardView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                let shape = RoundedRectangle(cornerRadius: 20.0)
-                if card.isFaceUp {
-                    shape.fill().foregroundColor(.white)
-                    shape.strokeBorder(lineWidth: 3)
-                    PieView(startAngle: Angle(degrees: 0-90), endAngle: Angle(degrees: 110-90))
-                        .padding(CardConstants.timerPadding)
-                        .opacity(CardConstants.timerOpacity)
-                    Text(card.content).font(font(in: geometry.size))
-                } else if card.isMatched {
-                    shape.opacity(0)
-                } else {
-                    shape.fill()
-                }
+                PieView(startAngle: Angle(degrees: 0-90), endAngle: Angle(degrees: 110-90))
+                    .padding(CardConstants.timerPadding)
+                    .opacity(CardConstants.timerOpacity)
+                Text(card.content).font(font(in: geometry.size))
             }
+            .modifier(Cardify(isFaceUp: card.isFaceUp))
         }
     }
     
